@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Cloudielocks Solutions Company Job Application Page" />
+    <meta name="keywords" content="Cloudielocks, Job Application" />
+    <meta name="author" content="Abdurrahman Faqih" />
+    <title>Job Application</title>
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Overpass:wght@600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@600&family=Poppins&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="nav__logo" href="index.html">
+                <!-- Created using Figma -->
+                <img src="styles/images/cloud-logo.png" alt="Cloud Logo" />
+            </a>
+            <a class="nav__item" href="index.html">Home</a>
+            <a class="nav__item" href="jobs.html">Jobs</a>
+            <a class="nav__item" href="apply.html">Apply</a>
+            <a class="nav__item" href="about.html">About Us</a>
+            <a class="nav__item" href="enhancements.html">Enhancements</a>
+        </nav>
+    </header>
+    <article class="apply__article">
+        <form method="POST" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <label for="jobRefNo">Job Reference Number</label>
+            <input id="jobRefNo" name="jobRefNo" type="text" required="required" pattern="\w{5}" />
+
+            <fieldset>
+                <legend>Personal Details</legend>
+
+                <label class="form__label" for="firstName">First Name</label>
+                <input id="firstName" name="firstName" type="text" maxlength="20" pattern="^([a-z]|[A-Z])+$"
+                    required="required" />
+                <br />
+                <label class="form__label" for="lastName">Last Name</label>
+                <input id="lastName" name="lastName" type="text" maxlength="20" pattern="^([a-z]|[A-Z])+$"
+                    required="required" />
+                <br />
+                <label class="form__label" for="dateOfBirth">Date of Birth</label>
+                <input id="dateOfBirth" name="dateOfBirth" type="text" placeholder="dd/mm/yyyy"
+                    pattern="\d{1,2}\/\d{1,2}\/\d{4}" required="required" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Gender</legend>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="gender" value="male" required="required" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender" value="female" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <label class="form__label" for="streetAdd">Street Address</label>
+                <input id="streetAdd" name="streetAdd" type="text" maxlength="40" required="required" />
+                <br />
+                <label class="form__label" for="suburb">Suburb/Town</label>
+                <input id="suburb" name="suburb" type="text" maxlength="40" required="required" />
+                <br />
+                <label class="form__label" for="state">State</label>
+                <select name="state" id="state" required="required">
+                    <option value="">Please Select</option>
+                    <option value="vic">VIC</option>
+                    <option value="nsw">NSW</option>
+                    <option value="qld">QLD</option>
+                    <option value="nt">NT</option>
+                    <option value="wa">WA</option>
+                    <option value="sa">SA</option>
+                    <option value="tas">TAS</option>
+                    <option value="act">ACT</option>
+                </select>
+                <br />
+                <label class="form__label" for="postcode">Postcode</label>
+                <input name="postcode" id="postcode" type="text" pattern="\d{4}" required="required" />
+                <br />
+                <label class="form__label" for="email">Email Address</label>
+                <input name="email" id="email" type="email" required="required" />
+                <br />
+                <label class="form__label" for="phone">Phone Number</label>
+                <input name="phone" id="phone" type="text" pattern="(\d| ){8,12}" required="required" />
+            </fieldset>
+
+            <fieldset>
+                <legend>Skills</legend>
+                <label for="html">
+                    HTML
+                </label>
+                <input type="checkbox" name="skill[]" id="html" value="html" checked="checked" />
+                <label for="css">
+                    CSS
+                </label>
+                <input type="checkbox" name="skill[]" id="css" value="css" />
+                <label for="javascript">
+                    JavaScript
+                </label>
+                <input type="checkbox" name="skill[]" id="javascript" value="javascript" />
+                <label for="php">
+                    PHP
+                </label>
+                <input type="checkbox" name="skill[]" id="php" value="php" />
+                <label for="other">
+                    Other skills
+                </label>
+                <input type="checkbox" name="skill[]" id="other" value="other" />
+
+                <p id="form__textarea">
+                    <label for="other-skills">Other Skills</label><br />
+                    <textarea name="other-skills" id="other-skills" cols="30" rows="5"
+                        placeholder="Other skills here.."></textarea>
+                </p>
+            </fieldset>
+            <input type="submit" value="Apply" />
+        </form>
+    </article>
+    <footer>
+        <p>COS60004 Create Web Applications</p>
+        <p>&#169; Swinburne University of Technology</p>
+        <p>
+            <a class="footer__link" href="mailto:104675143@student.swin.edu.au">Contact Us</a>
+        </p>
+    </footer>
+</body>

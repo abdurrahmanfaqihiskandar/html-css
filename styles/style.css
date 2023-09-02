@@ -1,0 +1,383 @@
+/*
+filename: Abdurrahman Faqih
+author: Abdurrahman Faqih
+created: 25 August 2023
+last modified: 28 August 2023
+description: index.html, jobs.html, apply.html, about.html, enhancements.html
+*/
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: #62b2f4;
+}
+
+nav {
+    /* To remove whitespaces between the anchor elements */
+    font-size: 0;
+}
+
+.nav__logo {
+    display: inline-block;
+    padding: 0 1.2rem;
+    vertical-align: middle;
+}
+
+nav .nav__item {
+    display: inline-block;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    vertical-align: middle;
+    padding: 1em 0.6em;
+    width: 6.5em;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav .nav__item:hover {
+    color: black;
+    background-color: aliceblue;
+}
+
+/* Styles from Lab 4 */
+aside {
+    border: 4px inset purple;
+    border-radius: 14px;
+    margin: 1em;
+    padding: 1em;
+    width: 25%;
+    float: right;
+    box-shadow: 10px 10px 5px #aaa;
+}
+
+main {
+    padding: 0 1em;
+}
+
+footer {
+    background-color: #62b2f4;
+    padding: 0 1em;
+}
+
+footer p {
+    display: inline-block;
+    width: 33%;
+    font-size: small;
+}
+
+footer p:first-child {
+    float: left;
+}
+
+footer p:nth-child(2) {
+    text-align: center;
+}
+
+footer p:last-child {
+    float: right;
+    text-align: right;
+}
+
+footer .footer__link {
+    text-decoration: none;
+    color: black;
+}
+
+/* Make the whole document use the same font-family */
+h1,
+h2,
+button,
+aside,
+section,
+article,
+footer {
+    font-family: Poppins, sans-serif;
+}
+
+.home__tagline {
+    font-size: 2em;
+}
+
+#home__header {
+    text-align: center;
+    /* Image by rawpixel.com on Freepik */
+    background: url(images/cloud-background.jpg);
+    background-repeat: repeat-x;
+    background-position: bottom;
+    height: 600px;
+    width: 100%;
+    background-color: #EDEBE9;
+    padding: 1em 0;
+}
+
+#home__content {
+    background-color: #A8CFEF;
+    padding: 1em;
+}
+
+.home__content-header {
+    margin: 0;
+}
+
+.home__content-button {
+    text-align: center;
+}
+
+a.button {
+    display: inline-block;
+    height: 3em;
+    width: 10em;
+    text-align: center;
+    line-height: 3em;
+    text-decoration: none;
+    color: black;
+    border-radius: 0.6em;
+    background-color: #76BCF6;
+    cursor: pointer;
+}
+
+h1#jobs__header {
+    /* For assignment criteria */
+    font: normal 2em Poppins, sans-serif;
+}
+
+.jobs__aside-listitems {
+    text-decoration: none;
+}
+
+aside h2 {
+    margin: 0;
+}
+
+.jobs__listing {
+    padding: 1em;
+}
+
+.apply__article {
+    padding: 1em;
+}
+
+.form__label {
+    display: inline-block;
+    width: 8em;
+}
+
+.about__article {
+    padding: 1em;
+}
+
+/* styling definition list */
+dl {
+    border: 3px double #ccc;
+    padding: 0.5em;
+}
+
+dt {
+    clear: left;
+    float: left;
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+    color: green;
+}
+
+dt::after {
+    content: " :";
+}
+
+dd {
+    width: 55%;
+    margin-left: 42%;
+}
+
+#school-details {
+    width: 50%;
+    float: left;
+}
+
+#portrait-photo {
+    float: right;
+}
+
+figure {
+    text-align: center;
+    border: 1px solid black;
+}
+
+#timetable {
+    clear: both;
+}
+
+table {
+    margin: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1em;
+    background-color: #A8CFEF;
+}
+
+/* Tablet Screens */
+@media screen and (max-width: 700px) {
+
+    /* General */
+    nav .nav__item {
+        font-size: 15px;
+    }
+
+    a.button {
+        width: 8em;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    /* Home Page */
+    section#home__header {
+        height: 70%;
+    }
+
+    .home__header-logo {
+        height: 200px;
+    }
+
+    /* Jobs Page */
+    aside h2 {
+        font-size: 1.2em;
+    }
+
+    .jobs__aside-listitems {
+        font-size: 0.8em;
+    }
+
+    /* About Page */
+    #portrait-photo {
+        float: none;
+        width: 100%;
+    }
+
+    #school-details {
+        width: 100%;
+        float: none;
+    }
+
+    dl {
+        font-size: 0.8em;
+    }
+
+    table {
+        font-size: 0.8em;
+    }
+}
+
+/* Mobile Screens */
+@media screen and (max-width: 400px) {
+
+    /* General */
+    nav .nav__item {
+        font-size: 10px;
+    }
+
+    a.button {
+        font-size: 0.4em;
+    }
+
+    footer p {
+        font-size: 8px;
+    }
+
+    /* Home Page */
+    section#home__header {
+        height: 70%;
+    }
+
+    .home__header-logo {
+        height: 150px;
+    }
+
+    .home__tagline {
+        font-size: 1.2em;
+    }
+
+    .home__tagline-description,
+    .home__content-header {
+        font-size: 1em;
+    }
+
+    .home__content-description,
+    #home__content-button {
+        font-size: 0.8em;
+    }
+
+    /* Jobs Page */
+    #jobs__header {
+        font-size: 1.1em;
+    }
+
+    aside {
+        display: none;
+    }
+
+    .jobs__listing h2 {
+        font-size: 1.1em;
+    }
+
+    .jobs__listing h3 {
+        font-size: 1em;
+    }
+
+    .jobs__listing p,
+    .jobs__listing ul,
+    .jobs__listing ol {
+        font-size: 0.8em;
+    }
+
+    a.jobs__apply {
+        font-size: 0.8em;
+    }
+
+    /* About Page */
+    #portrait-photo {
+        float: none;
+        width: 100%;
+    }
+
+    #school-details {
+        width: 100%;
+        float: none;
+    }
+
+    dl {
+        font-size: 0.6em;
+    }
+
+    table {
+        font-size: 0.5em;
+    }
+
+    /* Enhancements Page */
+    #enhancements__article h1 {
+        font-size: 1.1em;
+    }
+
+    #enhancements__article h2 {
+        font-size: 1em;
+    }
+
+    #enhancements__article p,
+    #enhancements__article ul {
+        font-size: 0.8em;
+    }
+}
